@@ -7,6 +7,7 @@
 # NUC8i7HVK-Hackintosh
 
 ![Lenovo](./Screenshot/1.jpg)
+
 ![Lenovo](./Screenshot/2.jpg)
  
 ## Specification:
