@@ -58,23 +58,15 @@ In Display menu, set the following options:
    
 ## Working:
 
- - Keyboard (USB)
- - Touchscreen with gestures and Pen (Fix 10\9\2023)
- - Battery indicator
  - Audio (Internal)
  - GPU acceleration
- - Camera
  - Intel Wireless / Bluetooth
  - Native CPU power management
- - MicroSD card reader
+ - SD card reader
  - HDMI video and audio 
  - Thunderbolt JHL6540 Alpine Ridge Work whit HotPlug 
- - Sleep\Wake Fix 30\8\2023 Thank [Vorshim92](https://github.com/Vorshim92)
- - Trackpad (USB) 9\9\2023 Thank [Lorys89](https://github.com/Lorys89)
    
  - ## Not Work:
-
- - Microphone 
  
 ## USB Map:
 
