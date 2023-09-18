@@ -16,10 +16,11 @@
 - Memory: 2x16GB DDR4-2400
 - Harddrive: 1TB PCIe-NVMe M.2 SSD
 - GPU: Intel HD 630 (Empty Framebuffer)
-- Discrete GPU: Radeon™ RX Vega M GH Graphics
+- Discrete GPU: Radeon™ RX Vega M GH Graphics 4GB
 - WLAN: Intel dual-band 8265 Wireless 802.11ac (2 x 2) & Bluetooth 4.1
-- Audio: Realtek HDA ALC700
-- 2x USB-C/Thunderbolt 3 Alpine Ridge (power delivery, DisplayPort, data transfer)
+- Audio: Realtek HDA ALC700 7.1 Digital Audio, 3.5mm Front Headset Jack, 3.5mm Rear Speaker/TOSLINK Combo Jack
+- 2x Thunderbolt 3 Type-C, 5x USB 3.0 Type-A, 1x USB 3.1 Gen 2 Type-A, 1x USB 3.1 Gen 2 Type-C, 2x LAN, 2x Mini DisplayPort, 2x HDMI 2.0b
+- LAN: Intel Wired i210-AT and i219-LM
 - SD Card Reader
 - Headphone / mic combo 
 
