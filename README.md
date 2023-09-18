@@ -15,7 +15,7 @@
 - CPU: Intel® Core™ i7-8809G (Kaby Lake-R)
 - Memory: 2x16GB DDR4-2400
 - Harddrive: 1TB PCIe-NVMe M.2 SSD
-- GPU: Intel HD 630
+- GPU: Intel HD 630 (Empty Framebuffer)
 - Discrete GPU: Radeon™ RX Vega M GH Graphics
 - WLAN: Intel dual-band 8265 Wireless 802.11ac (2 x 2) & Bluetooth 4.1
 - Audio: Realtek HDA ALC700
@@ -66,7 +66,7 @@ In Display menu, set the following options:
  - HDMI video and audio 
  - Thunderbolt JHL6540 Alpine Ridge Work whit HotPlug 
    
- - ## Not Work:
+## Not Work:
  
 ## USB Map:
 
