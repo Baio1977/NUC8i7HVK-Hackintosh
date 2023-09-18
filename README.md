@@ -23,7 +23,7 @@
 - SD Card Reader
 - Headphone / mic combo 
 
-## BIOS Settings:V 1.48
+## BIOS Settings:V 0070 12/19/2022
 
 The bios must be properly configured prior to installing macOS.
 In Security menu, set the following settings:
