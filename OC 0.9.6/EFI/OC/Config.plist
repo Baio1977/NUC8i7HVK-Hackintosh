@@ -14,14 +14,6 @@
                     <key>Path</key>
                     <string>SSDT-NUC8i7HVK.aml</string>
                 </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-TB3HotPlug(2,S).aml</string>
-                </dict>
             </array>
             <key>Delete</key>
             <array/>
@@ -63,13 +55,13 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>NTFY to XTFY For TB</string>
+                    <string>_E20 to XE20 For TB</string>
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
-                    <data>UE5URlk=</data>
+                    <data>FC1fRTIw</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
@@ -77,7 +69,7 @@
                     <key>OemTableId</key>
                     <data></data>
                     <key>Replace</key>
-                    <data>UFhURlk=</data>
+                    <data>FC1YRTIw</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -433,30 +425,48 @@
                 <dict>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,28,4/0,0</string>
+                    <key>PCI-Thunderbolt</key>
+                    <integer>1</integer>
                     <key>device_type</key>
                     <string>PCI bridge</string>
                     <key>model</key>
-                    <string>JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016]</string>
+                    <string>JHL6540 Thunderbolt 3 UPSB (C step) [Alpine Ridge 4C 2016]</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,28,4/0,0/0,0</string>
+                    <key>PCIHotplugCapable</key>
+                    <integer>0</integer>
                     <key>device_type</key>
                     <string>PCI bridge</string>
                     <key>model</key>
-                    <string>JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016]</string>
+                    <string>JHL6540 Thunderbolt 3 DSB0 (C step) [Alpine Ridge 4C 2016]</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,28,4/0,0/0,0/0,0</string>
+                    <key>TBTDPLowToHigh</key>
+                    <data>AQAAAA==</data>
+                    <key>TBTFlags</key>
+                    <data>AwAAAA==</data>
+                    <key>ThunderboltConfig</key>
+                    <data>AAIBAAIABQMBAAQABQMCAAMABQMBAAEAAwMCAAIAAQA=</data>
                     <key>ThunderboltDROM</key>
                     <data>mgAAAAAAAIaAGnNQgwFkAIaAcyABIQiBgAKAAAAACIKQAYAAAAAIg4AEgAEAAAiEkAOAAQAAAoULhiABAGQAAAAAAAOHgAWIUAAABYlQAAAFilAAAAWLUAAACAFJbnRlbAAPAkhhZGVzIENhbnlvbgA=</data>
                     <key>device_type</key>
                     <string>System peripheral</string>
+                    <key>linkDetails</key>
+                    <data>CAAAAAMAAAA=</data>
                     <key>model</key>
-                    <string>JHL6540 Thunderbolt 3 NHI (C step) [Alpine Ridge 4C 2016]</string>
+                    <string>JHL6540 Thunderbolt 3 NHI0 (C step) [Alpine Ridge 4C 2016]</string>
+                    <key>pathcr</key>
+                    <data>BAAAAAAAAAAAAAcAEAAQAAUAAAAAAAAAAAAHABAAEAABAAAACwAOAA4AAAAAAAAAAgAAAAAAAAAAAAQAAgABAAMAAAAAAAAAAAAHAAIAAQA=</data>
+                    <key>power-save</key>
+                    <integer>1</integer>
+                    <key>sscOffset</key>
+                    <data>AAc=</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
                 <dict>
@@ -465,16 +475,18 @@
                     <key>device_type</key>
                     <string>PCI bridge</string>
                     <key>model</key>
-                    <string>JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016]</string>
+                    <string>JHL6540 Thunderbolt 3 DSB1 (C step) [Alpine Ridge 4C 2016]</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,28,4/0,0/2,0</string>
+                    <key>PCIHotplugCapable</key>
+                    <integer>0</integer>
                     <key>device_type</key>
                     <string>PCI bridge</string>
                     <key>model</key>
-                    <string>JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016]</string>
+                    <string>JHL6540 Thunderbolt 3 DSB2 (C step) [Alpine Ridge 4C 2016]</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x4,0x0)</key>
                 <dict>
@@ -483,7 +495,7 @@
                     <key>device_type</key>
                     <string>PCI bridge</string>
                     <key>model</key>
-                    <string>JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016]</string>
+                    <string>JHL6540 Thunderbolt 3 DSB4 (C step) [Alpine Ridge 4C 2016]</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
                 <dict>
@@ -993,7 +1005,7 @@
                 <key>InstanceIdentifier</key>
                 <string></string>
                 <key>LauncherOption</key>
-                <string>Full</string>
+                <string>Disabled</string>
                 <key>LauncherPath</key>
                 <string>Default</string>
                 <key>PickerAttributes</key>
