@@ -36,27 +36,7 @@ In Security menu, set the following settings:
 -  `Anti-Theft > Computrace -> Current Setting`: must be **Disabled**
 -  `Secure Boot > Secure Boot`: must be **Disabled**
 -  `Intel SGX -> Intel SGX Control`: must be **Disabled**
--  `Device Guard`: must be **Disabled**
-
-In Startup menu, set the following options:
-
--  `UEFI/Legacy Boot`: **UEFI Only**
--  `CSM Support`: **No**
-
-In Thunderbolt menu, set the following options:
-
--  `Thunderbolt BIOS Assist Mode`: **UEFI Only**
--  `Wake by Thunderbolt(TM) 3`: **No**
--  `Security Level`: **No**
--  `Support in Pre Boot Environment > Thunderbolt(TM) device`: **No**
-
-In Display menu, set the following options:
-         
--  `Boot Display Device` : **LCD**
--  `Shared Display Priority` **HDMI**
--  `Total Garphics Memory` : **512MB** If you set it like this in Bios you can delete "framebuffer-fbmem | Data | 00009000" in patch IGPU.
--  `Boot Time Extension` : **Disabled**	   
-   
+    
 ## Working:
 
  - Audio (Internal)
