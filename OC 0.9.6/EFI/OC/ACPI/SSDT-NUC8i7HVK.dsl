@@ -7,8 +7,6 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "NUC8i7HV", 0x00000000)
     External (_SB_.PCI0.LPCB.H_EC.XSTA, MethodObj)    // 0 Arguments
     External (_SB_.PCI0.PEG1, DeviceObj)
     External (_SB_.PCI0.PEG1.PEGP, DeviceObj)
-    External (_SB_.PCI0.RP05, DeviceObj)
-    External (_SB_.PCI0.RP05.PXSX, DeviceObj)
     External (_SB_.PCI0.XHC_, DeviceObj)
     External (_SB_.PCI0.XHC_._PRW, MethodObj)    // 0 Arguments
     External (HPTE, IntObj)
@@ -113,21 +111,6 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "NUC8i7HV", 0x00000000)
                         }
                     }
 
-                    Scope (H_EC)
-                    {
-                        Method (_STA, 0, NotSerialized)  // _STA: Status
-                        {
-                            If (_OSI ("Darwin"))
-                            {
-                                Return (Zero)
-                            }
-                            Else
-                            {
-                                Return (\_SB.PCI0.LPCB.H_EC.XSTA ())
-                            }
-                        }
-                    }
-
                     Device (EC)
                     {
                         Name (_HID, "ACID0001")  // _HID: Hardware ID
@@ -140,6 +123,21 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "NUC8i7HV", 0x00000000)
                             Else
                             {
                                 Return (Zero)
+                            }
+                        }
+                    }
+
+                    Scope (H_EC)
+                    {
+                        Method (_STA, 0, NotSerialized)  // _STA: Status
+                        {
+                            If (_OSI ("Darwin"))
+                            {
+                                Return (Zero)
+                            }
+                            Else
+                            {
+                                Return (\_SB.PCI0.LPCB.H_EC.XSTA ())
                             }
                         }
                     }

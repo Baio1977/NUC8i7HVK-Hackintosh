@@ -20,7 +20,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-TB3HotPlug.aml</string>
+                    <string>SSDT-TB3_NUC.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -67,7 +67,7 @@
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data>FC1fRTIw</data>
                     <key>Limit</key>
@@ -97,7 +97,7 @@
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data>X0lOSQBwTFRSNQ==</data>
                     <key>Limit</key>
@@ -129,7 +129,7 @@
                 <key>ResetHwSig</key>
                 <false/>
                 <key>ResetLogoStatus</key>
-                <true/>
+                <false/>
                 <key>SyncTableIds</key>
                 <false/>
             </dict>
@@ -137,56 +137,7 @@
         <key>Booter</key>
         <dict>
             <key>MmioWhitelist</key>
-            <array>
-                <dict>
-                    <key>Address</key>
-                    <integer>3758096384</integer>
-                    <key>Comment</key>
-                    <string>MMIO devirt 0xE0000000</string>
-                    <key>Enabled</key>
-                    <true/>
-                </dict>
-                <dict>
-                    <key>Address</key>
-                    <integer>4261412864</integer>
-                    <key>Comment</key>
-                    <string>MMIO devirt 0xFE000000</string>
-                    <key>Enabled</key>
-                    <true/>
-                </dict>
-                <dict>
-                    <key>Address</key>
-                    <integer>4273995776</integer>
-                    <key>Comment</key>
-                    <string>MMIO devirt 0xFEC00000</string>
-                    <key>Enabled</key>
-                    <true/>
-                </dict>
-                <dict>
-                    <key>Address</key>
-                    <integer>4275044352</integer>
-                    <key>Comment</key>
-                    <string>MMIO devirt 0xFED00000</string>
-                    <key>Enabled</key>
-                    <true/>
-                </dict>
-                <dict>
-                    <key>Address</key>
-                    <integer>4276092928</integer>
-                    <key>Comment</key>
-                    <string>MMIO devirt 0xFEE00000</string>
-                    <key>Enabled</key>
-                    <true/>
-                </dict>
-                <dict>
-                    <key>Address</key>
-                    <integer>4278190080</integer>
-                    <key>Comment</key>
-                    <string>MMIO devirt 0xFF000000</string>
-                    <key>Enabled</key>
-                    <true/>
-                </dict>
-            </array>
+            <array/>
             <key>Patch</key>
             <array/>
             <key>Quirks</key>
@@ -204,7 +155,7 @@
                 <key>DiscardHibernateMap</key>
                 <false/>
                 <key>EnableSafeModeSlide</key>
-                <true/>
+                <false/>
                 <key>EnableWriteUnprotector</key>
                 <true/>
                 <key>ForceBooterSignature</key>
@@ -218,7 +169,7 @@
                 <key>ProtectUefiServices</key>
                 <false/>
                 <key>ProvideCustomSlide</key>
-                <true/>
+                <false/>
                 <key>ProvideMaxSlide</key>
                 <integer>0</integer>
                 <key>RebuildAppleMemoryMap</key>
@@ -1396,6 +1347,18 @@
                     <false/>
                     <key>Path</key>
                     <string>ResetNvramEntry.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>TbtForcePower.efi</string>
                 </dict>
                 <dict>
                     <key>Arguments</key>
