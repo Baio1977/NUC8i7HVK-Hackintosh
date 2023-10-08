@@ -15,7 +15,6 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "NUC8i7HV", 0x00000000)
     External (_SB_.PCI0.XHC_._PRW, MethodObj)    // 0 Arguments
     External (GPRW, MethodObj)    // 2 Arguments
     External (HPTE, IntObj)
-    External (TBFP, IntObj)
 
     Scope (\)
     {
