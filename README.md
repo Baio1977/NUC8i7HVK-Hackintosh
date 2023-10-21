@@ -51,7 +51,12 @@ In Security menu, set the following settings:
  
 ## USB Map:
 
-![Lenovo](./Screenshot/3.png)
+![Nuc](./Screenshot/3.png)
+
+## SSDT Full Hack
+
+![Nuc](./Screenshot/4.png)
+![Nuc](./Screenshot/5.png)
 
 ## Credits
 
