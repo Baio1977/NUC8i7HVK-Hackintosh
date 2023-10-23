@@ -58,6 +58,11 @@ In Security menu, set the following settings:
 ![Nuc](./Screenshot/4.png)
 ![Nuc](./Screenshot/5.png)
 
+## Gui Opencore
+
+![Nuc](./Screenshot/6.png)
+
+
 ## Credits
 
 - [Apple](https://apple.com) for macOS.
