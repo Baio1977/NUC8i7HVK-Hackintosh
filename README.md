@@ -12,7 +12,7 @@
  
 ## Specification:
 
-- CPU: Intel® Core™ i7-8809G (Kaby Lake-R)
+- CPU: Intel® Core™ i7-8809G (Kaby Lake-r)
 - Memory: 2x16GB DDR4-2400
 - Harddrive: 1TB PCIe-NVMe M.2 SSD
 - GPU: Intel HD 630 (Empty Framebuffer)
