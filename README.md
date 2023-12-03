@@ -43,7 +43,7 @@ In Security menu, set the following settings:
  - GPU acceleration
  - Intel Wireless / Bluetooth
  - Native CPU power management
- - SD card reader
+ - SD card reader (Fix 3\12\2023 add CtlnaSDXC.kext + Spoof Device Properties)
  - HDMI video and audio 
  - Thunderbolt JHL6540 Alpine Ridge Work whit HotPlug 
    
