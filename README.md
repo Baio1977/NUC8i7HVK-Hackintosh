@@ -44,7 +44,7 @@ In Security menu, set the following settings:
  - Intel Wireless / Bluetooth
  - Native CPU power management
  - SD card reader (Fix 3\12\2023 add CtlnaSDXC.kext + Spoof Device Properties)
- - HDMI video and audio 
+ - HDMI video and sound 
  - Thunderbolt JHL6540 Alpine Ridge Work whit HotPlug 
    
 ## Not Work:
