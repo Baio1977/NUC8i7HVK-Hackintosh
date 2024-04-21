@@ -53,6 +53,11 @@ In Security menu, set the following settings:
 
 ![Nuc](./Screenshot/3.png)
 
+## New Layout All Sound:
+
+![Nuc](./Screenshot/7.png)
+![Nuc](./Screenshot/8.png)
+
 ## SSDT Full Hack
 
 ![Nuc](./Screenshot/4.png)
