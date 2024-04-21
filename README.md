@@ -39,7 +39,7 @@ In Security menu, set the following settings:
     
 ## Working:
 
- - Audio (FIX ALL Sound - New Layout 22 for ALC700)
+ - Audio (Fix ALL Sound - New Layout 22 for ALC700)
  - GPU acceleration
  - Intel Wireless / Bluetooth
  - Native CPU power management
