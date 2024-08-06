@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Zip NUC8i7HVK
+    - name: NUC8i7HVK
       run: |
         rm -Rf TOOLS
         rm -Rf "Bios Settings"
@@ -28,5 +28,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: NUC8i7HVK-zip
+        name: NUC8i7HVK
         path: NUC8i7HVK.zip
