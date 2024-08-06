@@ -23,10 +23,10 @@ jobs:
         rm -Rf README.md
         rm -Rf opencore-2023-09-16-093343.txt
       
-        zip -r EFI.zip .
+        zip -r NUC8i7HVK.zip .
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: EFI-zip
-        path: EFI.zip
+        name: NUC8i7HVK-zip
+        path: NUC8i7HVK.zip
