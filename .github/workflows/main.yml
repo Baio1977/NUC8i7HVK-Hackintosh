@@ -13,11 +13,20 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Zip repository
-      run: zip -r repository.zip .
+    - name: Zip EFI
+      run: |
+        rm -Rf TOOLS
+        rm -Rf "Bios  Settings"
+        rm -Rf Screenshot
+        rm -Rf "SysReport"
+        rm -Rf .gitignore
+        rm -Rf README.md
+        rm -Rf opencore-2023-09-16-093343.txt
+      
+        zip -r EFI.zip .
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: repository-zip
-        path: repository.zip
+        name: EFI-zip
+        path: EFI.zip
