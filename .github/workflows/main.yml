@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Zip EFI
+    - name: Zip NUC8i7HVK
       run: |
         rm -Rf TOOLS
         rm -Rf "Bios Settings"
@@ -24,7 +24,7 @@ jobs:
         rm -Rf opencore-2023-09-16-093343.txt
       
         zip -r NUC8i7HVK.zip .
-
+        
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
