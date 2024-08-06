@@ -22,7 +22,6 @@ jobs:
         rm -Rf .gitignore
         rm -Rf README.md
         rm -Rf opencore-2023-09-16-093343.txt
-        rm -Rf .gitignore
         rm -Rf ".github"
         rm -Rf ".git"
         
