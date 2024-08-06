@@ -16,7 +16,7 @@ jobs:
     - name: Zip EFI
       run: |
         rm -Rf TOOLS
-        rm -Rf Bios  Settings
+        rm -Rf Bios Settings
         rm -Rf Screenshot
         rm -Rf "SysReport"
         rm -Rf .gitignore
