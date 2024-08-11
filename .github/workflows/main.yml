@@ -20,6 +20,7 @@ jobs:
         rm -Rf Screenshot
         rm -Rf "SysReport"
         rm -Rf .gitignore
+        rm -Rf NUC8i7HVK.ioreg
         rm -Rf README.md
         rm -Rf opencore-2023-09-16-093343.txt
         rm -Rf ".github"
