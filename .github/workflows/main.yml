@@ -12,8 +12,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: NUC8i7HVK
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      if: startsWith(github.ref, 'refs/tags/')    
+      
+     - name: NUC8i7HVK
       run: |
         rm -Rf TOOLS
         rm -Rf "Bios Settings"
@@ -33,5 +36,3 @@ jobs:
       with:
         name: NUC8i7HVK
         path: NUC8i7HVK.zip
-        uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
