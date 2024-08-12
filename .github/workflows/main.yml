@@ -7,14 +7,13 @@ on:
 
 jobs:
   build:
-    runs-on: macos-12
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Release
-      uses: softprops/action-gh-release@v2
-      if: startsWith(github.ref, 'refs/tags/')    
-      
-     - name: NUC8i7HVK
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Zip repository
       run: |
         rm -Rf TOOLS
         rm -Rf "Bios Settings"
