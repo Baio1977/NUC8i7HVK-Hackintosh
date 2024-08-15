@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Zip repository
+    - name: Zip EFI
       run: |
         rm -Rf TOOLS
         rm -Rf "Bios Settings"
