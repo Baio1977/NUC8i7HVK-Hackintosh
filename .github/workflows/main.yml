@@ -34,6 +34,10 @@ jobs:
         name: NUC8i7HVK
         path: NUC8i7HVK.zip
 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
