@@ -1,36 +1,34 @@
-name: Release
+name: GitHub Pages
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
 
 jobs:
-  release:
-    runs-on: macos-latest
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "${GITHUB_CONTEXT}"
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.119.0'
+          # extended: true
 
-      - name: Install github/hub
-        run: |
-          export HUB_VERSION="2.14.2"
-          curl -fsSL https://github.com/github/hub/raw/8d91904208171b013f9a9d1175f4ab39068db047/script/get | bash -s "${HUB_VERSION}"
+      - name: Build
+        run: hugo --minify
 
-      - name: Create release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          TAG_NAME="${GITHUB_REF##refs/tags/}"
-          echo "See [CHANGELOG.md](https://github.com/${GITHUB_REPOSITORY}/blob/${TAG_NAME}/CHANGELOG.md) for more details." > ./release_notes.md
-          RELEASE_NAME="$(jq -r '.name' ./package.json)"
-          sed -i "1i${RELEASE_NAME} ${TAG_NAME}\n" ./release_notes.md
-          ./bin/hub release create \
-            --draft \
-            --prerelease \
-            --file ./release_notes.md \
-            "${TAG_NAME}"
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
