@@ -33,3 +33,15 @@ jobs:
       with:
         name: NUC8i7HVK
         path: NUC8i7HVK.zip
+        
+    - name: Publish GitHub Release
+      if: ((github.event_name == 'push' && github.ref_name == 'master') || github.event_name == 'workflow_dispatch') && contains(github.event.head_commit.message, 'Bump version') == false
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: true
+        replacesArtifacts: true
+        prerelease: ${{ env.IS_PRE }}
+        bodyFile: ReleaseNotes.md
+        artifacts: "./Artifacts/*"
+        tag: ${{ env.REL_TAG }}
+        token: ${{ secrets.GITHUB_TOKEN }}
