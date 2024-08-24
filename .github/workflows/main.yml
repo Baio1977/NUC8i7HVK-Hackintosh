@@ -1,9 +1,9 @@
 name: Zip and Upload Artifact
 
-on: 
+on:
   push:
-    branches:
-      - main  # You can specify the branch you want to trigger the action
+    tags:
+      - "v*.*.*"
 
 jobs:
   build:
