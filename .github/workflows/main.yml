@@ -35,24 +35,4 @@ jobs:
         
     - name: GH Release
       uses: softprops/action-gh-release@v2.0.8
-
-    - name: Zip EFI
-      run: |
-        rm -Rf TOOLS
-        rm -Rf "Bios Settings"
-        rm -Rf Screenshot
-        rm -Rf "SysReport"
-        rm -Rf .gitignore
-        rm -Rf NUC8i7HVK.ioreg
-        rm -Rf README.md
-        rm -Rf opencore-2023-09-16-093343.txt
-        rm -Rf ".github"
-        rm -Rf ".git"
-        
-        zip -r NUC8i7HVK.zip .
-                 
-    - name: GH Release
-      uses: softprops/action-gh-release@v2.0.8
-      with:
-        name: NUC8i7HVK
-        path: NUC8i7HVK.zip
+      if: startsWith(github.ref, 'refs/tags/')
