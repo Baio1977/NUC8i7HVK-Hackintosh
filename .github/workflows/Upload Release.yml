@@ -19,10 +19,6 @@ jobs:
     env:
       JOB_TYPE: BUILD
     steps:
-      - uses: actions/checkout@v4
-        with:
-          name: Artifacts
-          path: build/*/*.zip
       - name: Upload build
         uses: svenstaro/upload-release-action@2.9.0
         if: github.event_name != 'pull_request'
