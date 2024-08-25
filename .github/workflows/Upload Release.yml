@@ -1,4 +1,4 @@
-name: CI
+name: Publish Release
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
     types: [published]
 
 env:
-  PROJECT_TYPE: KEXT
+  PROJECT_TYPE: EFI
 
 jobs:
   build:
@@ -20,16 +20,6 @@ jobs:
       JOB_TYPE: BUILD
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: "recursive"
-      - name: CI Bootstrap
-        run: src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/acidanthera/ocbuild/master/ci-bootstrap.sh) && eval "$src" || exit 1
-      - name: Lilu Bootstrap
-        run: src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/acidanthera/Lilu/master/Lilu/Scripts/bootstrap.sh) && eval "$src" || exit 1
-      - run: xcodebuild -configuration Debug -arch x86_64 build
-      - run: xcodebuild -configuration Release -arch x86_64 build
-      - name: Upload to Artifacts
-        uses: actions/upload-artifact@v4
         with:
           name: Artifacts
           path: build/*/*.zip
