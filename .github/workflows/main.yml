@@ -37,6 +37,8 @@ jobs:
       uses: svenstaro/upload-release-action@2.9.0
       if: github.event_name != 'pull_request'
       with:
+         name: NUC8i7HVK
+         path: NUC8i7HVK.zip
          repo_token: ${{ secrets.GITHUB_TOKEN }}
          file: build/*/*.zip
          tag: ${{ github.event_name == 'release' && github.ref || 'nightly' }}
