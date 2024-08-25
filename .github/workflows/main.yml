@@ -10,8 +10,8 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
-
+      uses: actions/checkout@v4.1.6
+      
     - name: Zip EFI
       run: |
         rm -Rf TOOLS
@@ -28,7 +28,7 @@ jobs:
         zip -r NUC8i7HVK.zip .
         
     - name: Upload artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4.3.6
       with:
         name: NUC8i7HVK
         path: NUC8i7HVK.zip
