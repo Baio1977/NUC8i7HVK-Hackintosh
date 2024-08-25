@@ -40,7 +40,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v4.3.6
       with:
-        name: Artifacts
+        name: NUC8i7HVK
         path: NUC8i7HVK.zip
         
     - name: Upload build
