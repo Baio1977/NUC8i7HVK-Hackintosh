@@ -52,5 +52,4 @@ jobs:
          tag: ${{ github.ref }}
          body: ${{ github.event_name != 'release' && github.event.head_commit.message || '' }}
          file_glob: true
-         prerelease: ${{ github.event_name != 'release' }}
          overwrite: true
