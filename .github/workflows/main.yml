@@ -48,7 +48,7 @@ jobs:
       if: github.event_name != 'pull_request'
       with:
          repo_token: ${{ secrets.GITHUB_TOKEN }}
-         file: build/*/*.zip
+         file: ./*.zip
          tag: ${{ github.event_name == 'release' && github.ref || 'nightly' }}
          body: ${{ github.event_name != 'release' && github.event.head_commit.message || '' }}
          file_glob: true
