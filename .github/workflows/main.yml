@@ -1,4 +1,4 @@
-name: CI
+name: Artifact and Build Release
 
 on:
   push:
